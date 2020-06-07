@@ -1,0 +1,30 @@
+{
+  "exportPresets": [
+    {
+      "name": "xs",
+      "width": 240,
+      "force": true
+    },
+    {
+      "name": "sm",
+      "width": 320,
+      "force": true,
+      "default": true
+    },
+    {
+      "name": "md",
+      "width": 480,
+      "force": true
+    },
+    {
+      "name": "lg",
+      "width": 640,
+      "force": true
+    },
+    {
+      "name": "xl",
+      "width": 1024,
+      "force": true
+    }
+  ]
+}

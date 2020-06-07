@@ -1,0 +1,21 @@
+<picture *ngFor="let community of communities | keyvalue">
+  <source
+    *ngFor="let media of responsiveImagesConfiguration"
+    [media]="
+      '(max-width: ' + media.max + 'px) and (min-width: ' + media.min + 'px)'
+    "
+    [srcset]="
+      './assets/images/' +
+      community.value.id +
+      media.suffix +
+      '.' +
+      media.format
+    "
+    [type]="'image/' + media.format"
+  />
+
+  <img
+    alt="{{ community.name }} logo"
+    [src]="'./assets/images/' + community.value.id + '_md.png'"
+  />
+</picture>
